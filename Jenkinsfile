@@ -8,7 +8,7 @@ pipeline {
         }
          stage("test") {
             steps {
-                echo 'testing the app'
+                echo "testing the app ${env.BRANCH_NAME}"
             }
         }
          stage("deploy") {
